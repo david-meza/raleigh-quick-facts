@@ -1,0 +1,7 @@
+{
+  "name": "RaleighQuickFacts",
+  "private": "true",
+  "devDependencies": {
+    "ionic": "driftyco/ionic-bower#1.1.0"
+  }
+}
