@@ -2137,10 +2137,10 @@
 						value : dataPoint,
 						label : data.labels[index],
 						datasetLabel: dataset.label,
-						strokeColor : dataset.strokeColor,
-						fillColor : dataset.fillColor,
-						highlightFill : dataset.highlightFill || dataset.fillColor,
-						highlightStroke : dataset.highlightStroke || dataset.strokeColor
+						strokeColor : dataset.strokeColor[index],
+						fillColor : dataset.fillColor[index],
+						highlightFill : dataset.highlightFill[index] || dataset.fillColor[index],
+						highlightStroke : dataset.highlightStroke[index] || dataset.strokeColor[index]
 					}));
 				},this);
 
