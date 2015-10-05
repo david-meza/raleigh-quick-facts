@@ -31,7 +31,7 @@
   <body ng-app="quickfacts">
 
     <ion-pane>
-      <ion-header-bar class="bar-stable">
+      <ion-header-bar class="bar-positive">
         <h1 class="title">Population of Raleigh - Quick Facts</h1>
       </ion-header-bar>
 
@@ -39,11 +39,11 @@
 
         <div class="card">
             <div class="item item-divider">
-                Population Comparison (2010)
+                Population change in NC cities
             </div>
             <div class="item item-text-wrap">
                 <canvas id="nc-population"
-                        class="chart chart-bar"
+                        class="chart chart-line"
                         chart-data="charts.population.data"
                         chart-labels="charts.population.labels"
                         chart-legend="charts.population.legend"
@@ -64,9 +64,73 @@
                         chart-data="charts.ages.data"
                         chart-labels="charts.ages.labels"
                         chart-legend = "charts.ages.legend"
-                        chart-options = "charts.ages.options"
-                        chart-colours = "charts.ages.colours">
+                        chart-type = "charts.ages.type"
+                        chart-options = "charts.ages.options">
                 </canvas>
+            </div>
+            <div class="button-bar">
+              <a class="button button-positive" ng-click = "toggle('ages','Pie')">Pie</a>
+              <a class="button button-positive" ng-click = "toggle('ages','Doughnut')">Doughnut</a>
+              <a class="button button-positive" ng-click = "toggle('ages','PolarArea')">Polar Area</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="item item-divider">
+                Median Household Income
+            </div>
+            <div class="item item-text-wrap">
+                <canvas id="nc-income"
+                        class="chart chart-bar"
+                        chart-data="charts.income.data"
+                        chart-labels="charts.income.labels"
+                        chart-legend="charts.income.legend"
+                        chart-series="charts.income.series"
+                        chart-options="charts.income.options"
+                        chart-colours = "charts.income.colours">
+                </canvas>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="item item-divider">
+                Gender distribution
+            </div>
+            <div class="item item-text-wrap">
+                <canvas id="gender-distribution"
+                        class="chart chart-pie"
+                        chart-data="charts.gender.data"
+                        chart-labels="charts.gender.labels"
+                        chart-legend = "charts.gender.legend"
+                        chart-type = "charts.gender.type"
+                        chart-options = "charts.gender.options">
+                </canvas>
+            </div>
+            <div class="button-bar">
+              <a class="button button-positive" ng-click = "toggle('gender','Pie')">Pie</a>
+              <a class="button button-positive" ng-click = "toggle('gender','Doughnut')">Doughnut</a>
+              <a class="button button-positive" ng-click = "toggle('gender','PolarArea')">Polar Area</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="item item-divider">
+                Racial distribution
+            </div>
+            <div class="item item-text-wrap">
+                <canvas id="racial-distribution"
+                        class="chart chart-pie"
+                        chart-data="charts.racial.data"
+                        chart-labels="charts.racial.labels"
+                        chart-legend = "charts.racial.legend"
+                        chart-type = "charts.racial.type"
+                        chart-options = "charts.racial.options">
+                </canvas>
+            </div>
+            <div class="button-bar">
+              <a class="button button-positive" ng-click = "toggle('racial','Pie')">Pie</a>
+              <a class="button button-positive" ng-click = "toggle('racial','Doughnut')">Doughnut</a>
+              <a class="button button-positive" ng-click = "toggle('racial','PolarArea')">Polar Area</a>
             </div>
         </div>
 

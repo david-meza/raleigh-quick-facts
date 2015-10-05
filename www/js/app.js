@@ -1,4 +1,4 @@
-Chart.defaults.global.colours = ["#333333"]
+Chart.defaults.global.colours = ['#49649e', '#ff97cc', '#ffb600', '#76bd3a', '#765bae', '#d8262c', '#11c1f3', '#ffc900'];
 
 var qf = angular.module('quickfacts', ['ionic', 'chart.js'])
 
