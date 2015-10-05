@@ -96,8 +96,8 @@ qf.factory("chartsService", ['$http', function($http) {
     var female = parseFloat(charts.data[6]['raleigh']);
 
     charts.gender = {
-      labels: ['Female', 'Male'],
-      data: [female, (100 - female).toFixed(2)],
+      labels: ['Male', 'Female'],
+      data: [(100 - female).toFixed(2), female],
       legend: true,
       type: 'Doughnut',
       options: {
