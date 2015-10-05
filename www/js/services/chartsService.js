@@ -21,7 +21,7 @@ qf.factory("chartsService", ['$http', function($http) {
       },
       colours: [
         {
-          fillColor: 'rgba(51,102,204,0.4)',
+          fillColor: 'rgba(51,102,204,0.05)',
           strokeColor: 'rgba(51,102,204,1)',
           pointColor: 'rgba(51,102,204,1)',
           pointStrokeColor: '#fff',
@@ -29,7 +29,7 @@ qf.factory("chartsService", ['$http', function($http) {
           pointHighlightStroke: 'rgba(51,102,204,0.8)'
         },
         {
-          fillColor: 'rgba(255,153,0,0.4)',
+          fillColor: 'rgba(255,153,0,0.05)',
           strokeColor: 'rgba(255,153,0,1)',
           pointColor: 'rgba(255,153,0,1)',
           pointStrokeColor: '#fff',
@@ -37,7 +37,7 @@ qf.factory("chartsService", ['$http', function($http) {
           pointHighlightStroke: 'rgba(255,153,0,0.8)'
         },
         {
-          fillColor: 'rgba(220,57,18,0.4)',
+          fillColor: 'rgba(220,57,18,0.05)',
           strokeColor: 'rgba(220,57,18,1)',
           pointColor: 'rgba(220,57,18,1)',
           pointStrokeColor: '#fff',
@@ -45,7 +45,7 @@ qf.factory("chartsService", ['$http', function($http) {
           pointHighlightStroke: 'rgba(220,57,18,0.8)'
         },
         {
-          fillColor: 'rgba(16,150,24,0.4)',
+          fillColor: 'rgba(16,150,24,0.05)',
           strokeColor: 'rgba(16,150,24,1)',
           pointColor: 'rgba(16,150,24,1)',
           pointStrokeColor: '#fff',
@@ -53,7 +53,7 @@ qf.factory("chartsService", ['$http', function($http) {
           pointHighlightStroke: 'rgba(16,150,24,1)'
         },
         {
-          fillColor: 'rgba(153,0,153,0.4)',
+          fillColor: 'rgba(153,0,153,0.05)',
           strokeColor: 'rgba(153,0,153,1)',
           pointColor: 'rgba(153,0,153,1)',
           pointStrokeColor: '#fff',
@@ -61,7 +61,7 @@ qf.factory("chartsService", ['$http', function($http) {
           pointHighlightStroke: 'rgba(153,0,153,0.8)'
         },
         {
-          fillColor: 'rgba(0,153,198,0.4)',
+          fillColor: 'rgba(0,153,198,0.05)',
           strokeColor: 'rgba(0,153,198,1)',
           pointColor: 'rgba(0,153,198,1)',
           pointStrokeColor: '#fff',
